@@ -29,7 +29,7 @@ def setup():
     sprites.append(Raindrop(160,50,enemyTeam))
     sprites.append(Raindrop(130,50,enemyTeam))
     sprites.append(Raindrop(90,50,enemyTeam))
-    sprites.append(JiggleBot(50,50,enemyTeam))
+    sprites.append(JiggleBot(200,200,enemyTeam))
     sprites.append(ScreenSaverBot(100,100,enemyTeam))
                            
 def draw():

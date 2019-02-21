@@ -1,7 +1,7 @@
 class JiggleBot:
      
     speed = 3
-    diameter = 15
+    diameter = 20
     c = color(255,0,0)
     
     def __init__(self, x, y, team):
