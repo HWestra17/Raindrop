@@ -6,7 +6,11 @@ class Lobber (Sprite):
     diameter = 50
     c = color(0,0,255)
     
-    def aim():
+    def move(self):
+        self.x += self.speed
+        if self.x < 0 or self.x > width:
+            self.speed *= -1
+            
         
     
     
