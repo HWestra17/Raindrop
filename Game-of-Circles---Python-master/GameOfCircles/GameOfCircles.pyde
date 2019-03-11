@@ -37,6 +37,7 @@ def setup():
     SpriteManager.spawn(Raindrop(90,50,enemyTeam))
     SpriteManager.spawn(JiggleBot(200,200,enemyTeam))
     SpriteManager.spawn(ScreenSaverBot(100,100,enemyTeam))
+    SpriteManager.spawn(Lobber(100,100, enemyTeam))
                            
 def draw():
     global player, sprites
