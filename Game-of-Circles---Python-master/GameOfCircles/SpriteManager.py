@@ -20,21 +20,22 @@ def spawn(obj):
     sprites.append(obj)
     
 def animate():
-    for sprite in sprite:
+    for sprite in sprites:
         sprite.animate()
     checkCollisions()
     bringOutTheDead()
     
 def checkCollisions():
-    for i in range(0, len(sprite)):
+    for i in range(0, len(sprites)):
         for j in range(i + 1, len(sprites)):
             a = sprites[i]
-            b = sprites[i]
-            if a.team !=b.team and a.isColliding(b):
-                sprites[i].handleCollision()
-                sprites[j].handleCollision()
+            b = sprites[j]
+            if a.team != b.team and a.isColliding(b):
+                a.handleCollision()
+                b.handleCollision()
                 
 def bringOutTheDead():
     for sprite in destroyed:
-        sprites.remove(sprite)
+        if sprite in sprites:
+            sprites.remove(sprite)
         destroyed.remove(sprite)

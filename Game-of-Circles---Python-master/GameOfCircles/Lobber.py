@@ -48,7 +48,3 @@ class Lobber (Sprite):
         if(go):
             go = False
             SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
-        
-    
-
-    

@@ -1,6 +1,7 @@
 import SpriteManager
+from Sprite import Sprite
 
-class Bullet:
+class Bullet(Sprite):
  
     
     diameter = 10
@@ -20,11 +21,3 @@ class Bullet:
         or self.y < 0 - self.diameter
         or self.y > height + self.diameter):
             SpriteManager.destroy(self)
-        
-    def display(self):
-        fill(self.c)
-        ellipse(self.x, self.y, self.diameter, self.diameter)
-        
-    def animate(self):
-        self.move()
-        self.display()

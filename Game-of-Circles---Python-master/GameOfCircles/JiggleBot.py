@@ -1,27 +1,15 @@
-class JiggleBot:
+import SpriteManager
+from Sprite import Sprite
+#from Armored import Armored
+
+class JiggleBot (Sprite):
      
     speed = 3
     diameter = 20
-    c = color(20,50,10)
-    
-    def __init__(self, x, y, team):
-        self.x = x
-        self.y = y
-        self.team = team
+    c = color(88, 214, 141)
         
     def move(self):
         self.y += random (-self.speed, self.speed)
         self.x += random (-self.speed, self.speed)
         self.x = constrain(self.x, 0, width)
         self.y = constrain(self.y, 0, height)
-        
-    
-            
-        
-    def display(self):
-        fill(self.c)
-        ellipse(self.x, self.y, self.diameter, self.diameter)
-        
-    def animate(self):
-        self.move()
-        self.display()

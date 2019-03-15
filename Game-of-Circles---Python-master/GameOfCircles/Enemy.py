@@ -13,4 +13,3 @@ class Enemy(Sprite):
         if self.x < 0 or self.x > width:
             self.speed *= -1
             
-    
