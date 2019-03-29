@@ -9,10 +9,10 @@ from Enemy import Enemy
 
 class Lobber (Sprite):
     
-    speed = 4
+    speed = 5
     xspeed = 4
     diameter = 50
-    c = color(0,0,255)
+    c = color(25,25,25)
     
     def _init_(self, x, y, team):
         self.x = x

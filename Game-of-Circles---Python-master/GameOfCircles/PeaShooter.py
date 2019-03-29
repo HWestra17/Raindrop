@@ -1,8 +1,10 @@
 import SpriteManager
+from Pea import Pea
 
 class PeaShooter:
     wait = 1000
     mark = 0
+    cooldown = True
     
     
     def __init__(self, handler):

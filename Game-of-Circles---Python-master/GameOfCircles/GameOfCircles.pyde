@@ -6,7 +6,6 @@ from Raindrop import Raindrop
 from JiggleBot import JiggleBot
 from ScreenSaverBot import ScreenSaverBot
 from Lobber import Lobber
-#from Armored import Armored
 import SpriteManager
 
 def setup():

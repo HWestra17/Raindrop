@@ -10,7 +10,7 @@ class Armored:
         ellipse(self.x, self.y, self.diameter, self.diameter)
         noStroke()
         
-        def handleCollision(self):
-            self.armor -= 1
-            if self.armor < 1:
-                SpriteManager.destroy(self)
+    def handleCollision(self):
+        self.armor -= 1
+        if self.armor < 1:
+            SpriteManager.destroy(self)
