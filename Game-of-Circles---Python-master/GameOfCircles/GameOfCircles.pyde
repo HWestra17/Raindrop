@@ -6,7 +6,7 @@ from Raindrop import Raindrop
 from JiggleBot import JiggleBot
 from ScreenSaverBot import ScreenSaverBot
 from Lobber import Lobber
-from AOE import AOE
+from recBoi import recBoi
 import SpriteManager
 
 def setup():
@@ -37,7 +37,7 @@ def setup():
     SpriteManager.spawn(JiggleBot(200,200,enemyTeam))
     SpriteManager.spawn(ScreenSaverBot(100,100,enemyTeam))
     SpriteManager.spawn(Lobber(100,100, enemyTeam))
-    SpriteManager.spawn(AOE(130,50, enemyTeam))
+    SpriteManager.spawn(recBoi(130,50, enemyTeam))
     
     
 def draw():

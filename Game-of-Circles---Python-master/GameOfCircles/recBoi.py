@@ -8,15 +8,12 @@ import SpriteManager
 from Enemy import Enemy
 from Armored import Armored
 
-class AOE (Armored, Sprite):
+class recBoi (Sprite):
     
     speed = 5
     xspeed = 4
     diameter = 50
-    
-    def display(self):
-        fill(248, 135, 9)
-        ellipse(self.x, self.y, self.diameter, self.diameter)
+    c = color (248, 135, 9)
     
     def _init_(self, x, y, team):
         self.x = x
@@ -52,3 +49,9 @@ class AOE (Armored, Sprite):
         if(go):
             go = False
             SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
+    
+    def monsterReborn():
+        for sprite in destroyed:
+            if sprite.remove:(sprite)
+            sprite.append(obj)
+            
