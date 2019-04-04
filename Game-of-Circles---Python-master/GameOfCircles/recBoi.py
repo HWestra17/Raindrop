@@ -7,13 +7,16 @@ from Player import Player
 import SpriteManager
 from Enemy import Enemy
 from Armored import Armored
+from ArmoredS import ArmoredS
 
-class recBoi (Sprite):
+class recBoi (Armored, Sprite):
     
     speed = 5
     xspeed = 4
     diameter = 50
-    c = color (248, 135, 9)
+    
+    def display(self):
+        color (248, 135, 9)
     
     def _init_(self, x, y, team):
         self.x = x

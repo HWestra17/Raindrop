@@ -6,7 +6,6 @@ class Armored:
     def display(self):
         stroke(100)
         strokeWeight(self.armor)
-        fill(255,0,0)
         ellipse(self.x, self.y, self.diameter, self.diameter)
         noStroke()
         

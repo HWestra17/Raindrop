@@ -12,7 +12,7 @@ class Lobber (Sprite):
     speed = 5
     xspeed = 4
     diameter = 50
-    c = color(25,25,25)
+    c = color(101,5,3)
     
     def _init_(self, x, y, team):
         self.x = x

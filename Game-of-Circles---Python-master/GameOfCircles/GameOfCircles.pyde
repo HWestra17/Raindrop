@@ -37,7 +37,7 @@ def setup():
     SpriteManager.spawn(JiggleBot(200,200,enemyTeam))
     SpriteManager.spawn(ScreenSaverBot(100,100,enemyTeam))
     SpriteManager.spawn(Lobber(100,100, enemyTeam))
-    SpriteManager.spawn(recBoi(130,50, enemyTeam))
+    #SpriteManager.spawn(recBoi(130,50, enemyTeam))
     
     
 def draw():
