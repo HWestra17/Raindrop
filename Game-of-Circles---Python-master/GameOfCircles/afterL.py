@@ -1,24 +1,22 @@
 mark = 0
 wait = 300
 go = True
-from Bullet import Bullet
 from Sprite import Sprite
 from Player import Player
 import SpriteManager
 from Enemy import Enemy
 from Armored import Armored
 from ArmoredS import ArmoredS
+from BS import BS
 
-class recBoi (Armored, Sprite):
+class afterL (ArmoredS, Sprite):
     
-    speed = 5
+    speed = 4
     xspeed = 4
     diameter = 50
+    c = color (255, 167, 3)
     
-    def display(self):
-        color (248, 135, 9)
-    
-    def _init_(self, x, y, team):
+    def __init__(self, x, y, team):
         self.x = x
         self.y = y
         self.team = team
@@ -51,10 +49,6 @@ class recBoi (Armored, Sprite):
             mark = millis()
         if(go):
             go = False
-            SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
+            SpriteManager.spawn(BS(self.x, self.y, vector, self.team))
     
-    def monsterReborn():
-        for sprite in destroyed:
-            if sprite.remove:(sprite)
-            sprite.append(obj)
-            
+    

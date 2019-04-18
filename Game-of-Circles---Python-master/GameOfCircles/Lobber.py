@@ -45,6 +45,10 @@ class Lobber (Sprite):
         if (millis() - mark > wait):
             go = not go
             mark = millis()
+        
+        if self.x < 0 or self.x > width:
+            self.speed *= -1   
+        
         if(go):
             go = False
             SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
