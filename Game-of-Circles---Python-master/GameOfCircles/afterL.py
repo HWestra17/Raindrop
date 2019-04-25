@@ -52,3 +52,4 @@ class afterL (ArmoredS, Sprite):
             SpriteManager.spawn(BS(self.x, self.y, vector, self.team))
     
     
+    

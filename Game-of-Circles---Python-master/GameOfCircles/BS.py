@@ -3,7 +3,6 @@ from Sprite import Sprite
 
 class BS(Sprite):
     diameter = 10
-    c = color(0)
     
     def __init__(self, x, y, vector, team):
         self.x = x
@@ -13,7 +12,7 @@ class BS(Sprite):
         self.speed = 8
         
     def display(self):
-        fill(self.c)
+        fill( random(0, 255), random(0,255), random(0, 255))
         rect(self.x, self.y, self.diameter, self.diameter)
         
     def move(self):
