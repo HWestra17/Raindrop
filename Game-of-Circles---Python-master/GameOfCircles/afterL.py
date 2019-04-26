@@ -50,6 +50,3 @@ class afterL (ArmoredS, Sprite):
         if(go):
             go = False
             SpriteManager.spawn(BS(self.x, self.y, vector, self.team))
-    
-    
-    

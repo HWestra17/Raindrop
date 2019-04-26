@@ -4,7 +4,7 @@ from Sprite import Sprite
 class Bullet(Sprite):
     speed = 8
     diameter = 10
-    c = color(0)
+    c = color(255,255,0)
     
     def __init__(self, x, y, vector, team):
         self.x = x
